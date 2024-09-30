@@ -1,0 +1,6 @@
+@import 'reset';
+
+//작업의 집중도를 높이기 위해 디바이스별로 따로 분리하여 작성
+@import 'mobile';
+@import 'tab';
+@import 'pc';

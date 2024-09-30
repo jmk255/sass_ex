@@ -1,0 +1,53 @@
+//노말라이즈
+@charset "utf-8";
+
+$primary:#3f51b5;
+
+html, html *{
+  margin:0; 
+  padding:0; 
+  border:0;
+  outline:0;
+  background-color:transparent;
+}
+
+html{
+  font-size:16px;
+  body{
+    font-family: 'Montserrat', Helvetica;
+    line-height:1;
+    nav{
+      ul{
+        li{
+          list-style:none;
+        }
+      }
+    }
+    a{text-decoration:none;}
+    img{vertical-align: top;}
+    hr{
+      display:block;
+      height:2px;
+    }
+    input, textarea{
+      width:100%;
+      border-bottom:1px solid #757575;
+      color:$primary;
+      font-size:0.75rem;
+      vertical-align: top;
+      border-radius: 0;
+      box-sizing:content-box;//사이즈에 영향을 주는 것을 허용함
+      appearance:none;
+      //도움글 설정 변경
+      &::placeholder{
+        color:$primary;
+      }
+    }
+    ul{
+      li{
+        list-style: none;
+      }
+    }
+  }
+}
+
