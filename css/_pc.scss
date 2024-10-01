@@ -1,0 +1,79 @@
+//1132px 이상부터 적용
+@media (min-width:1132px){
+  .display-section{
+    text-align: left;
+    .sec-tit{
+      float:left;
+      width:20%;
+      margin-bottom:0;
+    }
+    .desc{
+      width:80%;
+      float:right;
+      padding-left:20px;
+      box-sizing: border-box;
+      position:relative;
+      &::before{
+        display:block;
+        content: "";
+        position:absolute;
+        top:9px;
+        left:0; width:2px;
+        height:44px;
+        background:#e0e0e0;
+      }
+    }
+  }
+  .promotion-section{
+    .promo-list{
+      li{
+        width:23.6749%;
+        margin-left:1.7667%;
+      }
+    }
+  }
+
+  .work-section{
+    .sec-tit{
+      text-align: left;
+    }
+    .work-list{
+      li{
+        width:25%;
+      }
+    }
+  }
+  .blog-section{
+    .sec-tit{
+      float:left;
+      margin-bottom:0;
+    }
+    .blog-list{
+      float:right;
+      width:74.5583%; // 844/1132*100 = 74.5583...
+      li{
+        // 268/844*100 = 31.7535...
+        width:31.7535%;
+        margin-left:2.3696%;
+      }
+    }
+  }
+
+  .contact-section{
+    .sec-tit{
+      float:left;
+      margin-bottom:0;
+    }
+    .form-box{
+      float:right;
+      width:74.5583%;
+      .form, .textarea{
+        //412px
+        width:48.8151%;
+      }
+      .form{
+        margin-right:2.3696%;
+      }
+    }
+  }
+}
